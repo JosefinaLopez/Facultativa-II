@@ -1,6 +1,13 @@
+
 fun main() {
   println("Ingrese el numero para verificar si es primo: ")
-    val num = readLine()!!.toDouble()
+    val num = readLine()!!.toInt()
+    val resultado = if (esPrimo(numero = num)) {
+        "El numero es Primo"
+    }
+    else{
+        "El numero no es primo"
+    }
 
 }
 fun esPrimo(numero:Int):Boolean{
